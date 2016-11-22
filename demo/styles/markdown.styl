@@ -1,0 +1,47 @@
+.markdown
+  color: #555
+
+  h1,h2,h3,h4,h5
+    color: black
+
+  h1
+    padding-bottom: .3em
+    border-bottom: 1px solid #eee
+
+  blockquote
+    margin: 0
+    padding: 1em
+
+  blockquote
+    position: relative
+    background: #fafafa
+    &:after
+      absolute: top 0 left 0
+      display: block
+      content: ''
+      size: 4px 100%
+      background: #009c95
+  
+  code
+    position: relative
+    padding: 2px
+    margin: 0 2px
+    border: 1px solid #ddd
+    border-radius: 2px
+    background: #fafafa
+    color: #666
+    font-size: .9em
+    &:after
+      absolute: bottom 0 left 50%
+      display: block
+      content: ''
+      size: 0% 1px
+      background: #009c95
+      transform: translateX(-50%)
+      transition: width .3s
+    &:hover:after
+      width: 100%
+
+  li
+    line-height: 25px
+    font-size: 16px
