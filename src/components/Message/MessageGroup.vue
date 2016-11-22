@@ -18,7 +18,7 @@
 <script>
   import Message from './Message.vue'
 
-  const defaultMessage = {size: 'mini', duration: 5000, icon: 'info circle'}
+  const defaultMessage = {size: 'mini', duration: 4000, icon: 'info circle'}
 
   export default {
     name: 'ui-message-group',
