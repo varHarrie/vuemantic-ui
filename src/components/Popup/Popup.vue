@@ -7,7 +7,7 @@
       <slot name="content">
         <div class="header" v-if="title">{{title}}</div>
         <div class="content">{{content}}</div>
-        <div class="ui divider"></div>
+        <div class="ui divider" v-if="actions.length"></div>
         <div class="actions" v-if="actions.length">
           <div class="ui tiny button"
               v-for="action in actions"
@@ -36,7 +36,7 @@
       title: {type: String, default: false},
       content: {type: String, default: ''},
       placement: {type: String, default: 'top left'},
-      trigger: {type: String, default: 'hover', validator: (val) => ['hover', 'click'].indexOf(val) >= 0},
+      on: {type: String, default: 'hover', validator: (val) => ['hover', 'click'].indexOf(val) >= 0},
       actions: {type: Array, default: () => ([])},
       loading: {type: Boolean, default: false},
       noPadding: {type: Boolean, default: false},
@@ -59,7 +59,7 @@
     },
     watch: {
       hover (val) {
-        if (this.trigger !== 'hover') return
+        if (this.on !== 'hover') return
         if (val) this.show()
         else this.hide()
       }
@@ -76,7 +76,7 @@
         else this.show()
       },
       onClickOutside () {
-        if (this.trigger !== 'click') return false
+        if (this.on !== 'click') return false
         this.hide()
       },
       onAction (action) {

@@ -46,6 +46,9 @@
           </div>
         </div>
       </example>
+      <example title="click">
+        <ui-popup on="click" content="点击触发显示和隐藏"><div class="ui button">点击</div></ui-popup>
+      </example>
     </div>
   </div>
 </template>
