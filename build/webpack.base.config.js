@@ -3,10 +3,10 @@ var path = require('path')
 var root = path.resolve(__dirname, '../')
 
 module.exports = {
-  entry: './demo/main.js',
+  entry: path.resolve(root, 'demo/main.js'),
   output: {
     path: path.join(root, 'dist'),
-    publicPath: '/dist/',
+    publicPath: '/',
     filename: 'demo.js'
   },
   resolve: {

@@ -7,6 +7,10 @@ var baseConfig = require('./webpack.base.config')
 var root = path.resolve(__dirname, '../')
 
 module.exports = merge(baseConfig, {
+  entry: [
+    'webpack/hot/dev-server',
+    path.resolve(root, 'demo/main.js')
+  ],
   module: {
     preLoaders: [
       {
@@ -27,12 +31,13 @@ module.exports = merge(baseConfig, {
     formatter: require('eslint-friendly-formatter')
   },
   devServer: {
-    historyApiFallback: {index: '/dist/'},
+    historyApiFallback: true,
     hot: true,
     inline: true,
     progress: true
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"development"'

@@ -5,8 +5,8 @@
   "author": "varHarrie <varharrie@gmail.com>",
   "main": "dist/vuemantic-ui.js",
   "scripts": {
-    "dev": "webpack-dev-server --config ./build/webpack.dev.config.js --hot",
-    "pro": "webpack-dev-server --config ./build/webpack.pro.config.js --hot",
+    "dev": "webpack-dev-server --config ./build/webpack.dev.config.js",
+    "pro": "webpack-dev-server --config ./build/webpack.pro.config.js",
     "build-demo": "cross-env NODE_ENV=production webpack --config ./build/webpack.pro.config.js --progress --hide-modules",
     "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.build.config.js --progress --hide-modules"
   },

@@ -27,8 +27,7 @@ module.exports = merge(baseConfig, {
     formatter: require('eslint-friendly-formatter')
   },
   devServer: {
-    historyApiFallback: {index: '/dist/'},
-    hot: true,
+    historyApiFallback: true,
     inline: true,
     progress: true,
     noInfo: true
