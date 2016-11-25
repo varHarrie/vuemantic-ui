@@ -32,4 +32,3 @@ module.exports = merge(baseConfig, {
   ]
 })
 
-console.log(module.exports)
