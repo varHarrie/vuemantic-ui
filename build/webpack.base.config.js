@@ -5,9 +5,9 @@ var root = path.resolve(__dirname, '../')
 module.exports = {
   entry: './demo/main.js',
   output: {
-    path: path.join(root, './dist'),
+    path: path.join(root, 'dist'),
     publicPath: '/dist/',
-    filename: 'build.js'
+    filename: 'demo.js'
   },
   resolve: {
     extensions: ['', '.js', '.vue', '.styl']

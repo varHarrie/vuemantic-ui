@@ -1,6 +1,7 @@
 var path = require('path')
 var webpack = require('webpack')
 var merge = require('webpack-merge')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 var baseConfig = require('./webpack.base.config')
 var root = path.resolve(__dirname, '../')
@@ -26,7 +27,10 @@ module.exports = merge(baseConfig, {
     formatter: require('eslint-friendly-formatter')
   },
   devServer: {
-    historyApiFallback: true,
+    historyApiFallback: {index: '/dist/'},
+    hot: true,
+    inline: true,
+    progress: true,
     noInfo: true
   },
   plugins: [
@@ -34,8 +38,10 @@ module.exports = merge(baseConfig, {
       'process.env': {
         NODE_ENV: '"production"'
       }
+    }),
+    new HtmlWebpackPlugin({
+      template: 'demo/index.html',
+      filename: 'index.html'
     })
   ]
 })
-
-console.log(module.exports)

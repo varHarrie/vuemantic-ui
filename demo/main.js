@@ -21,8 +21,8 @@ Vue.directive('highlight', highlight)
 const App = Vue.extend({})
 
 const router = new VueRouter({
-  hashbang: true,
-  history: false,
+  hashbang: false,
+  history: true,
   linkActiveClass: 'active'
 })
 
