@@ -1,6 +1,6 @@
 {
   "name": "vuemantic-ui",
-  "version": "0.0.1-beta.1",
+  "version": "0.0.1-beta.2",
   "description": "UI components build with vue1.0 and semantic-ui.",
   "author": "varHarrie <varharrie@gmail.com>",
   "main": "dist/vuemantic-ui.js",
