@@ -40,6 +40,17 @@
           </a>
         </div>
       </div>
+      <div class="item">
+        <div class="ui mini teal left pointing label">{{methods.length}}</div>
+        <div class="header">
+          过滤器（filters）
+        </div>
+        <div class="menu">
+          <a class="item" v-for="filter in filters" v-link="{name:filter.name}">
+            {{filter.text}}
+          </a>
+        </div>
+      </div>
     </div>
     <div class="global-container">
       <router-view></router-view>
@@ -66,6 +77,10 @@
         {name: '_confirm', text: '$confirm'},
         {name: '_msg', text: '$msg'},
         {name: '_notice', text: '$notice'}
+      ],
+      filters: [
+        {name: 'f_date', text: '日期格式化（date）'},
+        {name: 'f_dateFromNow', text: '日期语义化（dateFromNow）'}
       ]
     })
   }

@@ -27,6 +27,13 @@ module.exports = {
           '/msg': {name: '_msg', component: require('./views/methods/msg.vue')},
           '/notice': {name: '_notice', component: require('./views/methods/notice.vue')}
         }
+      },
+      '/filters': {
+        component: {template: '<router-view></router-view>'},
+        subRoutes: {
+          '/date': {name: 'f_date', component: require('./views/filters/date.vue')},
+          '/dateFromNow': {name: 'f_dateFromNow', component: require('./views/filters/dateFromNow.vue')}
+        }
       }
     }
   }
