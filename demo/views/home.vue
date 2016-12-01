@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="item">
-        <div class="ui mini teal left pointing label">{{methods.length}}</div>
+        <div class="ui mini teal left pointing label">{{filters.length}}</div>
         <div class="header">
           过滤器（filters）
         </div>
