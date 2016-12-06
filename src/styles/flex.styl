@@ -1,0 +1,18 @@
+.ui-row
+  display: flex
+  flex-direction: row
+  &>.ui-cell
+    flex: 1
+  
+  for num in (1..16)
+    .ui-cell-{num}
+      flex: num
+
+.ui-col
+  display: flex
+  flex-direction: column
+  &>.ui-cell
+    flex: 1
+
+.ui-row.center, .ui-col.center
+  align-items: center

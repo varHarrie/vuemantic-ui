@@ -1,0 +1,14 @@
+@import './_mixin.styl'
+
+names = (ui-mg margin) (ui-mt margin-top) (ui-mr margin-right) (ui-mb margin-bottom) (ui-ml margin-left) (ui-pd padding) (ui-pt padding-top) (ui-pr padding-right) (ui-pb padding-bottom) (ui-pl padding-left)
+sizes = (xxs .25) (xs .5) (sm .75) (lg 1.25) (xl 1.5) (xxl 1.75)
+
+for name in names
+  // 0 ~ 100 (+5px)
+  iterator(0, 20, 5, 1px, name[1], name[0])
+  
+  // xxs,xs,sm,lg,xl,xxl
+  // 0.25,0.5,0.75,1.25,1.5,1.75 (rem)
+  for size in sizes
+    .{name[0]}-{size[0]}
+      {name[1]}: size[1] * 1rem

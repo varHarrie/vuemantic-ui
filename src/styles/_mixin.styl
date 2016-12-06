@@ -1,0 +1,4 @@
+iterator(from, to, multiple, unit = 1px, prop, abbpre, abbpost = '')
+  for i in (from..to)
+    .{abbpre}{i * multiple}{abbpost}
+      {prop}: i * multiple * unit

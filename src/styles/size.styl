@@ -1,0 +1,31 @@
+@import './_mixin.styl'
+
+// 0 ~ 45 (+5px)
+iterator(0, 9, 5, 1px, height, ui-h)
+iterator(0, 9, 5, 1px, width, ui-w)
+
+// 50 ~ 90 (+10px)
+iterator(5, 9, 10, 1px, height, ui-h)
+iterator(5, 9, 10, 1px, width, ui-w)
+
+// 100 ~ 1000 (+100px)
+iterator(1, 15, 100, 1px, height, ui-h)
+iterator(1, 15, 100, 1px, width, ui-w)
+
+// 0 ~ 100 (+5%)
+iterator(0, 20, 5, 1%, height, ui-h, p)
+iterator(0, 20, 5, 1%, width, ui-w, p)
+
+// size
+.ui-s16
+  width: 16px
+  height: 16px
+.ui-s32
+  width: 32px
+  height: 32px
+.ui-s48
+  width: 48px
+  height: 48px
+.ui-s64
+  width: 64px
+  height: 64px
