@@ -51,11 +51,22 @@
           </a>
         </div>
       </div>
+      <div class="item">
+        <div class="ui mini teal left pointing label">{{styles.length}}</div>
+        <div class="header">
+          样式（styles）
+        </div>
+        <div class="menu">
+          <a class="item" v-for="style in styles" v-link="{name:style.name}">
+            {{style.text}}
+          </a>
+        </div>
+      </div>
     </div>
     <div class="global-container">
       <router-view></router-view>
     </div>
-    <a href="https://github.com/varHarrie/vuemantic-ui"><img style="position:absolute;top:0;right:0;border:0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    <!--<a href="https://github.com/varHarrie/vuemantic-ui"><img style="position:absolute;top:0;right:0;border:0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>-->
   </div>
 </template>
 
@@ -81,6 +92,9 @@
       filters: [
         {name: 'f_date', text: '日期格式化（date）'},
         {name: 'f_dateFromNow', text: '日期语义化（dateFromNow）'}
+      ],
+      styles: [
+        {name: 's_helpers', text: '工具类（helpers）'}
       ]
     })
   }
@@ -97,4 +111,7 @@
       padding: 2rem
       height: 100%
       overflow-y: scroll
+      .page
+        h2
+          margin-top: 20px
 </style>

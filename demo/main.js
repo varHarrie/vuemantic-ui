@@ -9,6 +9,7 @@ let VuemanticUI
 
 if (process.env.NODE_ENV === 'development') {
   VuemanticUI = require('../src/index')
+  require('style!../src/styles/index.styl')
 } else {
   VuemanticUI = require('../dist/vuemantic-ui')
 }

@@ -34,6 +34,12 @@ module.exports = {
           '/date': {name: 'f_date', component: require('./views/filters/date.vue')},
           '/dateFromNow': {name: 'f_dateFromNow', component: require('./views/filters/dateFromNow.vue')}
         }
+      },
+      '/styles': {
+        component: {template: '<router-view></router-view>'},
+        subRoutes: {
+          '/helpers': {name: 's_helpers', component: require('./views/styles/helper.vue')}
+        }
       }
     }
   }
