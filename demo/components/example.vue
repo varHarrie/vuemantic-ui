@@ -102,7 +102,9 @@
     border-radius: 4px
     transition: box-shadow .3s
     &__actions
-      absolute: top 10px right 10px
+      position: absolute
+      top: 10px
+      right: 10px
       z-index: 10
       padding: 3px
       background: rgba(255,255,255,.8)

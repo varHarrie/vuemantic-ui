@@ -152,7 +152,9 @@
     box-shadow: 0 1px 3px 0 #D4D4D5,0 0 0 1px #D4D4D5
     transition: box-shadow .2s
     &__close
-      absolute: top 5px right 5px
+      position: absolute
+      top: 5px
+      right: 5px
       cursor: pointer
       color: #999
     &__container
@@ -170,8 +172,11 @@
       float: right
       margin-top: 5px
     &__progress
-      absolute: bottom 0 left 0
-      size: 0 2px
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 0
+      height: 2px
       background: #ddd
     &:hover
       box-shadow: 0 0 0 1px #D4D4D5,0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.15)

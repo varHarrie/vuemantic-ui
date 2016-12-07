@@ -27,9 +27,9 @@ module.exports = {
       {test: /\.(png|jpg|gif|svg)$/, loader: 'url', query: {limit: 10000, name: '[name].[ext]?[hash]'}}
     ]
   },
-  stylus: {
-    use: [require('nib')()],
-    import: ['~nib/lib/nib/index.styl']
-  },
+  // stylus: {
+  //   use: [require('nib')()],
+  //   import: ['~nib/lib/nib/index.styl']
+  // },
   devtool: '#eval-source-map'
 }

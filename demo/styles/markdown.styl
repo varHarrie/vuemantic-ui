@@ -16,10 +16,13 @@
     position: relative
     background: #fafafa
     &:after
-      absolute: top 0 left 0
+      position: absolute
+      top: 0
+      left: 0
       display: block
       content: ''
-      size: 4px 100%
+      width: 4px
+      height: 100%
       background: #009c95
   
   code
@@ -32,10 +35,13 @@
     color: #666
     font-size: .9em
     &:after
-      absolute: bottom 0 left 50%
+      position: absolute
+      bottom: 0
+      left: 50%
       display: block
       content: ''
-      size: 0% 1px
+      width: 0
+      height: 1px
       background: #009c95
       transform: translateX(-50%)
       transition: width .3s

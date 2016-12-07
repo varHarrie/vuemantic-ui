@@ -57,7 +57,9 @@
       transform: scale(1)
 
   .MessageGroup
-    fixed: top 5px left 50%
+    position: fixed
+    top: 5px
+    left: 50%
     z-index: 1001
     text-align: center
     transform: translateX(-50%)
