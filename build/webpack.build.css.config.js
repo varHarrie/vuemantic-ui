@@ -16,7 +16,7 @@ module.exports = {
     'space': path.resolve(root, 'src/styles/space.styl')
   },
   output: {
-    path: path.join(root, 'dist'),
+    path: path.join(root, 'dist/styles'),
     filename: '[name].css'
   },
   resolve: {
