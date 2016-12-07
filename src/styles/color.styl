@@ -15,7 +15,14 @@ colors = {
   brown : #A5673F,
   grey  : #767676,
   black : #1B1C1D,
-  white : #FFFFFF
+  white : #FFFFFF,
+  '000' : #000,
+  '333' : #333,
+  '666' : #666,
+  '999' : #999,
+  aaa   : #aaa,
+  ccc   : #ccc,
+  eee   : #eee
 }
 
 for name, color in colors
@@ -23,3 +30,5 @@ for name, color in colors
     color: color
   .ui-bg-{name}
     background: color
+  .ui-bd-{name}
+    border-color: color
