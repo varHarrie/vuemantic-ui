@@ -12,6 +12,7 @@ if (process.env.NODE_ENV === 'development') {
   require('style!../src/styles/index.styl')
 } else {
   VuemanticUI = require('../dist/vuemantic-ui')
+  require('style!../dist/styles/index.css')
 }
 
 Vue.use(VueRouter)
