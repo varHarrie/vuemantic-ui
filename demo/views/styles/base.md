@@ -8,13 +8,13 @@
 - `ui-oys` 显示垂直滚动条 overflow-y: scroll
 - `ui-oxs` 显示水平滚动条 overflow-x: scroll
 
-### float浮动
+### float
 
 - `ui-fl` 左浮动
 - `ui-fr` 左浮动
 - `ui-cf` 清除浮动
 
-### 文本
+### text
 
 - `ui-tl` 左对齐
 - `ui-tr` 右对齐
@@ -22,7 +22,7 @@
 - `ui-fn` 默认字体粗细
 - `ui-fb` 粗体
 
-### position位置
+### position
 
 - `ui-pr` 相对定位
 - `ui-pa` 绝对定位
@@ -31,7 +31,7 @@
 - `ui-phm` 块级元素水平居中定位（区别于`ui-tc`和`ui-mlr`）
 - `ui-pm` 块级元素水平垂直居中
 
-### display显示隐藏
+### display
 
 - `ui-n` `ui-none` 隐藏 display: none
 - `ui-b` `ui-block` 显示（块级元素） display: block
@@ -40,7 +40,18 @@
 - `ui-hide` 全透明 opacity: 0
 - `ui-show` 不透明 opacity: 1
 
-### others其他
+### border
+
+- `ui-bd` `ui-bd1` 1px边框（需指定border-color）
+- `ui-bd2` 2px边框（需指定border-color）
+
+### border-radius
+
+- `ui-bdr` 完全圆角
+- `ui-bdr2` 2px圆角
+- `ui-bdr4` 4px圆角
+
+### others
 
 - `ui-vm` 垂直居中 vertical-align: middle
 - `ui-cp` 点击指针 cursor: pointer
